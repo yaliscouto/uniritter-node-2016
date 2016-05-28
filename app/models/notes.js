@@ -8,7 +8,8 @@ module.exports = function (server) {
         schema = {
             type: 'notes',
             attributes: {
-                text: Types.string()
+                title: Types.string(),
+                text: Types.string().required()
             }
         }
 
