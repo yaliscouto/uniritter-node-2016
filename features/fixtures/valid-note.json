@@ -1,0 +1,18 @@
+{
+    "request": {
+        "data": {
+            "type": "notes",
+            "attributes": {
+                "text": "foobar"
+            }
+        }
+    },
+    "response": {
+        "data": {
+            "type": "notes",
+            "attributes": {
+                "text": "foobar"
+            }
+        }
+    }
+}
