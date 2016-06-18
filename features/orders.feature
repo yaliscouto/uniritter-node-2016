@@ -5,7 +5,7 @@ Feature: notes
 Scenario: posting order
     Given a valid order
     When I submit it to the API
-    Then I receive success message
+    Then I receive a success message
     And the new order id
 
 Scenario Outline: verify order status
