@@ -22,7 +22,7 @@ Examples:
 
 Scenario Outline: invalid order
   Given an invalid order that <condition>
-  When I submit that it to the API
+  When I submit it to the API
   Then I receive an error response
   And a message saying that <notification>
 Examples:
