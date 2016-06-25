@@ -1,0 +1,13 @@
+services: mongodb
+language: node_js
+node_js:
+- '5.11'
+addons:
+  code_climate:
+    repo_token: 9ee1095115f26eb40f5cc96e1d73020ae0e29f020ae731d22d048212cfaaa20
+after_script:
+- npm install -g codeclimate-test-reporter
+- codeclimate-test-reporter < coverage/lcov.info
+deploy:
+  api_key:
+    secure: 0JZtb/IJU9Y/TXiAmtlys+l9ttc5o2mioFMxGssQCLaiBunb0gf9sYt8KF92lrTNDnsGcBaSfAGbOt+y3SFh/cjXbsFRr25AaxY4AQXHG6Qy/Z1gNyKHADrfu8whO69Si/whlkjlYi/7dA0GNlJ2V5R1gTc2XcMBWPaJu7eMqjC4YqvSuXoaMQ6zPbpTB5ivSlge6F5X8/Inq+pt/QhHfponpWWea/unSxaUUQ2U28KShqX9qyBUbYyFI6nSGbPDAvOhisAJOMR68Na69mTTEJg3wlBXKa617bQOGZeFo0cKXlhqktw2TNCojVm7kiUoPuH9vFjoAhkCmmjoYUG3zr9gl3Mcrny5amVxmOf3N6qYmejqWIx9p/RlItGIZ2Pla2ze3m076Je5FcwTEhyNk4TubS6Z3598evAhqG9sMtQf/C2HcHKsJxjpBpv8chksOjwPmAYN1XQ1cMkjUKb1DFaHedCwjuVedWHONVEL0fS9JBA919qKuQHSW5vANZ4m/g6fut5Qjjdi6kCnCwbEE7bjcXqOf6jVf1xlHedudl/FaLiIB62lZ8n5zvn4VkiSzRkciLDdI4PKvir66GpI3KDsxrDZmfVWRcc8J67xsXGlUg++MmwnTUtupfzYdP0wsxD7J2ps8HIZlLzPhm/V4Zd1AcIVn86kkYzMMMj/vkY=
