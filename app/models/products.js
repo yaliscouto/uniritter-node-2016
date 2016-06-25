@@ -8,10 +8,11 @@ module.exports = function (server) {
         schema = {
             type: 'products',
             attributes: {
-                name: Types.string(),
-                price: Types.number().forbidden(),
+                name: Types.string().required(),
+                price: Types.number().min(1).required(),
                 brand: Types.string(),
                 model: Types.string()
+            }
         }
 
     harvesterPlugin.routes.all(schema).forEach(function (route) {
